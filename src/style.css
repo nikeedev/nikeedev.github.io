@@ -7,13 +7,6 @@ html {
     background-color: rgb(240, 238, 118);
 }
 
-
-#version {
-    font-family: 'Atkinson Hyperlegible';font-size: 22px;
-    font-size: 20px;
-    color: rgb(15, 155, 33);
+#tweet {
+    width: 64px;
 }
-
-#num {
-    font-size: 30px;
-} 
