@@ -1,36 +1,66 @@
 <!DOCTYPE html>
     <html>
     <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="src/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="src/favicon-16x16.png">
-        <link rel="manifest" href="src/site.webmanifest">
-        <link rel="mask-icon" href="src/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#f0ee76">
+        <link rel="shortcut icon" href="src/Smile.ico" type="image/x-icon"> 
         <title>Nikee</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div id="info">
+            <h3> Hello, my name is Nikita. Am learning to be a developer, so far so good! <br> Here is my <a href="/about.html">about page!</a></h3>
+            <h3> I've been working on some projects ( You can find more on mine GitHub page ), that are out in public on this website!</h3>
+        </div>
+
+
         <center>
-            <h1> Hello, my name is Nikita. Am learning to be a developer, so far so good! <br> Here is my <a href="/about">about page!</a></h1>
+            <div id="projects">
+                <br>
+                <h3> Here are some mine projects! </h3>
+                <h3> <a href="/calculator.js">Calculator.js!</a> </h3>
+                <h3> A clicker game called: <a href="/plantclicker/">Plantclicker(Very popular game!)</a></h3>
+                <h3><a href="/balljumper">Ball Jumper</a> made using Canvas API</h3>
+                <h3> <a href="/canvas">Canvas API game</a> I'm learning API, so it could always be updates on this project! </h3>
 
-            <h1>Here are some projects( more can you find on mine GitHub page! ) i've been working on that are publicly on the web(Using GitHub Pages):</h1>
-
-            <h3> I made: <a href="/calculator.js">Calculator.js!</a>, </h3>
-            <h3><a href="/plantclicker/">clicker game called: Plantclicker(Very popular game!)</a>,</h3>
-            <h3><a href="/balljumper">Ball Jumper</a>,</h3>
-            <h3> <a href="/canvas">Canvas API game</a> i'm learning API on, so it could always be updates there! </h3>
-            <h3>Also a new Satisfying game: <a href="/satisblue/">Satisblue!</a> Made with mostly css and its animation functions!</h3>
-
+                <h3>Also a new Satisfying project(just for fun :D ): <a href="/satisblue/">Satisblue!</a> Made with mostly css and its animation functions!</h3>
+            </div>
             <h1></h1>
+            <br>
+            <br>
+            <br>
+            <h1></h1>
+            
+            <h3 id="viewAbout" onclick="changeView();">Want to know about me? Click me!</h3>
 
-            <h3><a href="https://github.com/nikeedev"><img src="src/GitHubb.png" alt="GitHub Profile"></a> <a href="https://twitter.com/nikeedev"><img src="src/Twitter.svg" id="tweet" alt="Twitter pofile"></a></h3>
+            <div id="about">
+                <h1>
+                    Hello! My name is Nikita, but i preferred( some why ) to be called nikee. <br>
+                    I'm 14 yrs old, and learning myself being a developer. <br>
+                    I had worked with much from games to websites, and i find it a lot fun to code it! <br>
+                    <br>
+                    I therefore, like very much to code and have tried to code some stuff you can find on my github website: https://nikeedev.github.io/  <br>
+                    <br>
+                    I have made some python( like my game: "Cooking game", or Astro ), C#( Unity and MonoGame( very nice framework to make games on, and so easy!!)) and C++. <br>
+                    <br>
+                    Although i failed around 30 times on every game and project i worked on, i still just beginning to understand what coding is, and already in August 2021, i have coded in 1 year ( yay! ). <br>
+                    <br>
+                    <br>
+                    <br>
+                </h1>
+            </div>
+
+            <h3 id="viewProjects" onclick="changeView2();">Want to know about mine projects? Click me!</h3>
+
         </center>
+
+
+        <h3><a href="https://github.com/nikeedev"><img src="src/GitHubb.png" alt="GitHub Profile"></a> <a href="https://twitter.com/nikeedev"><img src="src/Twitter.svg" id="tweet" alt="Twitter profile"></a></h3>
         
     </body>
     
     <script src="src/script.js"></script>
     <link href="src/style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </html>
