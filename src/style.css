@@ -13,19 +13,19 @@ html {
 #about {
   font-family: 'Noto Sans';
   font-size: 10px;
+  color: white;
+  background-color: rgb(80, 98, 255);
 }
 
 #info {
   text-align: center;
-  width: 130px;
+  /* width: 130px; */
   font-family: 'Atkinson Hyperlegible';
-  font-size: 15px;
-  border-radius: 10px;
+  font-size: 17.5px;
+  /* border-radius: 10px; */
   position: relative;
+  line-height: 10px;
 }
-
-
-
 
 #tweet {
   width: 64px;
@@ -56,3 +56,22 @@ a:active {
 }
 
 
+.menubar {
+  font-family: 'Noto Sans';
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: rgb(80, 98, 255);
+}
+
+#socials { 
+  right: -50px;
+}
+
+.hello {
+  font-family: 'Noto Sans';
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+
+}
