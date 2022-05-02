@@ -16,6 +16,6 @@ if (date.getFullYear() == 2020 && date.getMonth() == 8) {
     longprogrammingmonths.innerHTML = 0; 
 } else {
     longprogrammingyears.innerHTML = date.getFullYear() - 2020 - 1;
-    longprogrammingmonths.innerHTML = 8 - date.getMonth() + 1;
+    longprogrammingmonths.innerHTML = 12 - date.getMonth();
 }
 
