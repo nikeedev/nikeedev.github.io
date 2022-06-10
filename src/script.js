@@ -10,6 +10,7 @@ if (date.getDate() == 12 && date.getMonth() == 11) {
     age.innerHTML = date.getFullYear() - 2007 - 1;
 }
 
+var left = date.getMonth() - 8;
 
 if (date.getFullYear() == 2020 && date.getMonth() == 8) {
     longprogrammingyears.innerHTML = date.getFullYear() - 2020;
