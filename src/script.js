@@ -12,13 +12,15 @@ if (date.getDate() == 12 && date.getMonth() == 11) {
     age.innerHTML = date.getFullYear() - 2007 - 1;
 }
 
-var left = date.getMonth() - 8;
+var d1 = new Date(2020, 08);
+let months;
+months = (date.getFullYear() - d1.getFullYear()) * 12;
+months -= d1.getMonth();
+months += date.getMonth();
 
-if (date.getFullYear() == 2020 && date.getMonth() == 8) {
-    longprogrammingyears.innerHTML = date.getFullYear() - 2020;
-    longprogrammingmonths.innerHTML = 0; 
-} else {
-    longprogrammingyears.innerHTML = date.getFullYear() - 2020 - 1;
-    longprogrammingmonths.innerHTML = 12 - date.getMonth();
-}
+let years = date.getFullYear() - d1.getFullYear()
+
+longprogrammingyears.innerHTML = years 
+longprogrammingmonths.innerHTML = months <= 0 ? 0 : months;
+
 
