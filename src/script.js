@@ -11,16 +11,3 @@ if (date.getDate() == 12 && date.getMonth() == 11) {
 } else {
     age.innerHTML = date.getFullYear() - 2007 - 1;
 }
-
-var d1 = new Date(2020, 08);
-let months;
-months = (date.getFullYear() - d1.getFullYear()) * 12;
-months -= d1.getMonth();
-months += date.getMonth();
-
-let years = date.getFullYear() - d1.getFullYear()
-
-longprogrammingyears.innerHTML = years 
-longprogrammingmonths.innerHTML = months <= 0 ? 0 : months;
-
-
