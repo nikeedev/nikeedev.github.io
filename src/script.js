@@ -11,14 +11,3 @@ if (date.getDate() == 12 && date.getMonth() == 11) {
 } else {
     age.innerHTML = date.getFullYear() - 2007 - 1;
 }
-
-var left = date.getMonth() - 8;
-
-if (date.getFullYear() == 2020 && date.getMonth() == 8) {
-    longprogrammingyears.innerHTML = date.getFullYear() - 2020;
-    longprogrammingmonths.innerHTML = 0; 
-} else {
-    longprogrammingyears.innerHTML = date.getFullYear() - 2020 - 1;
-    longprogrammingmonths.innerHTML = 12 - date.getMonth();
-}
-
