@@ -69,7 +69,11 @@ a:active {
 #socials { 
   right: -50px;
   text-align: center;
-  padding-bottom: 200px;
+  padding-bottom: 20px;
+}
+
+#mastodons {
+    font-size: 22px;
 }
 
 .hello {
