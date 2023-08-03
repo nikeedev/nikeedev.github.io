@@ -5,57 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="nikeedev" />
+    <meta property="og:url" content="https://nikeedev.github.io/" />
+    <meta property="og:image" content="https://nikeedev.github.io/assets/about-nikeedev.png" />
+    <meta property="og:image:height" content="500" />
+
     <style>
         html {
-            background-color: rgb(218, 218, 218);
+            background-color: var(--back-color);
+            font-family: 'Roboto';
         }
 
-        body {
-            font-family: 'Roboto', 'sans-serif';
-            color: rgb(80, 98, 255);
-        }
-
-        main {
+        .main {
             display: flex;
             height: 100vh;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            color: rgb(80, 98, 255);
+            color: var(--main-color);
             font-size: 30px;
         }
 
         .header404 {
-            color: rgb(80, 98, 255);
-            font-family: 'Chango', cursive;
+            color: var(--main-color);
             font-size: 30px;
         }
 
         .content404 {
             text-align: center;
-            color: rgb(80, 98, 255);
-
+            color: var(--main-color);
         }
     </style>
 </head>
 
 <body>
-    <main>
-        <h4 class="header404">404</h4>
-
+    <div class="main">
+        <h4 class="header404"><i>404</i></h4>
         <div class="content-404" style>
-            <b>Sorry! This link doesn't exist or isn't published out yet.</b>
+            <b>Sorry! This link doesn't exist or the page isn't published out yet.</b>
         </div>
         <p>
-            <strong><a href="/">Check out the home page</a></strong>
+            <a href="/">Check out the home page!</a>
         </p>
-    </main>
- o
--+-
-/ \
+    </div>
 </body>
 
 </html>
