@@ -31,14 +31,42 @@ body {
     margin-top: 0px;
     padding: 129px;
     color: var(--back-color);
+    flex-wrap: nowrap;
+    align-items: baseline;
 }
 
-#roles {
-    font-family: 'Roboto Mono', monospace;
-}
 
 .bottom {
     width: 100%;
     height: 70vh;
     background-color: var(--back-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+#roles pre {
+    margin-top: -20px;
+    margin-left: -50px;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.desc p {
+    margin-top: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14.5px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    overflow-wrap: break-word;
+}
+
+.links img {
+    position: absolute;
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-bottom: 15px;
 }
