@@ -1,72 +1,71 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 :root {
-    --main-color: rgb(98, 113, 247);
-    --back-color: rgb(236, 233, 233);
+  --main-color: rgb(98, 113, 247);
+  --back-color: rgb(236, 233, 233);
 }
 
 html {
-    font-family: "Helvetica";
+  font-family: "Helvetica";
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .top {
-    background-color: var(--main-color);
-    width: 100%;
-    height: 30vh;
+  background-color: var(--main-color);
+  width: 100vw;
+  height: 30vh;
 }
 
 #name {
-    font-family: 'Josefin Sans', monospace;
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
-    margin-top: 0px;
-    padding: 129px;
-    color: var(--back-color);
-    flex-wrap: nowrap;
-    align-items: baseline;
+  font-family: "Josefin Sans", monospace;
+  font-size: 36px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  padding-left: 5vw;
+  padding-top: 12.9vh;
+  color: var(--back-color);
 }
-
 
 .bottom {
-    width: 100%;
-    height: 70vh;
-    background-color: var(--back-color);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    align-content: center;
+  height: 70vh;
+  background-color: var(--back-color);
 }
 
-#roles pre {
-    margin-top: -20px;
-    margin-left: -50px;
-    font-size: 16px;
-    font-family: 'Roboto Mono', monospace;
+.roles {
+  float: left;
+  width: 85vh;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
 }
 
-.desc p {
-    margin-top: 30px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14.5px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    overflow-wrap: break-word;
+.roles li {
+  width: 200px;
 }
 
-.links img {
-    position: absolute;
-    margin: 0;
-    padding-top: 100px;
-    padding-left: 15px;
-    padding-bottom: 15px;
+.roles ul {
+  list-style-type: "- ";
+}
+
+.desc {
+  float: right;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14.5px;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-left: 20px;
+  overflow-wrap: break-word;
+}
+
+.links {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
