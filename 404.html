@@ -25,8 +25,7 @@
             align-items: center;
             flex-direction: column;
             color: var(--main-color);
-            padding-left: 7vw;
-            font-size: 6vw;
+            font-size: 2vw;
         }
 
         .header404 {
@@ -49,9 +48,17 @@
             <b>Sorry! This link doesn't exist or the page isn't published out yet.</b>
         </div>
         <p>
-            <a href="/">Check out my home page instead!</a>
+            If this website has an GitHub repository you can try opening it: <a id="github-link" href=""></a>
+            <br>
+            <a style="text-align: center;" href="/">Check out my home page instead!</a>
         </p>
     </div>
+
+    <script defer>
+        let link = document.getElementById("github-link");
+        link.href = "https://github.com/nikeedev"+ window.location.pathname;
+        link.innerText = "https://github.com/nikeedev" + window.location.pathname;
+    </script>
 </body>
 
 </html>
