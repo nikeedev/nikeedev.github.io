@@ -4,8 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 :root {
-  --main-color: rgb(98, 113, 247);
-  --back-color: rgb(236, 233, 233);
+  /* --main-color: rgb(98, 113, 247); */
+  --main-color: #fbf1c7;
+  /* --back-color: rgb(236, 233, 233); */
+  --back-color: #665c54;
 }
 
 html {
@@ -33,7 +35,7 @@ body {
 }
 
 .bottom {
-  height: 80vh;
+  height: 90vh;
   background-color: var(--back-color);
 }
 
@@ -42,10 +44,12 @@ body {
   width: 85vh;
   font-size: 14px;
   font-family: "Roboto Mono", monospace;
+  color: var(--main-color);
 }
 
 .roles li {
   width: 200px;
+  font-style: italic;
 }
 
 .roles ul {
@@ -54,6 +58,7 @@ body {
 
 .desc {
   float: right;
+  color: var(--main-color);
   font-family: "Roboto Mono", monospace;
   font-size: 14.5px;
   padding-bottom: 25px;
@@ -62,9 +67,63 @@ body {
   overflow-wrap: break-word;
 }
 
-.links {
+.menubar {
+  color: var(--main-color);
   position: absolute;
-  right: 0;
-  bottom: 0;
-  padding-right: 5px;
+  font-size: 14px;
+  padding-left: 40vw;
+  font-family: "Roboto Mono", monospace;
 }
+
+.menubar a + a {
+  padding: 50px;
+}
+
+a:any-link {
+  color: var(--main-color);
+}
+
+/* a:visited {
+  color: #fabd2f;
+} */
+
+#thanks {
+  position: absolute;
+  bottom: -20vh;
+  right: 2vw;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: var(--main-color);
+}
+
+#thanks img {
+  bottom: 40px;
+}
+
+
+/*
+  for projects.html
+*/
+
+
+.projects-text {
+  left: 0;
+  color: var(--main-color);
+  font-family: "Roboto Mono", monospace;
+  font-size: 14.5px;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-left: 20px;
+  overflow-wrap: break-word;
+}
+
+.projects-text span#yet {
+  padding-top: 20px;
+  padding-left: 50px;
+  font-style: italic;
+}
+
+
+/* 
+
+*/
