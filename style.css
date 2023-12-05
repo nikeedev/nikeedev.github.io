@@ -3,11 +3,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-:root {
-  /* --main-color: rgb(98, 113, 247); */
-  --main-color: #fbf1c7;
-  /* --back-color: rgb(236, 233, 233); */
-  --back-color: #665c54;
+@media (prefers-color-scheme: light) {
+  :root {
+    /* --main-color: rgb(98, 113, 247); */
+    --main-color: #fbf1c7;
+    /* --back-color: rgb(236, 233, 233); */
+    --back-color: #665c54;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --main-color: rgb(98, 113, 247); */
+    --main-color: #ebdbb2;
+    /* --back-color: rgb(236, 233, 233); */
+    --back-color: #282828;
+  }
 }
 
 html {
@@ -107,24 +118,27 @@ a:any-link {
 */
 
 
-.projects-text {
-  left: 0;
-  color: var(--main-color);
+.projects {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 14px;
   font-family: "Roboto Mono", monospace;
-  font-size: 14.5px;
-  padding-bottom: 25px;
-  padding-top: 10px;
-  padding-left: 20px;
-  overflow-wrap: break-word;
 }
 
-.projects-text span#yet {
-  padding-top: 20px;
-  padding-left: 50px;
-  font-style: italic;
-}
+#project {
+  background-color: var(--main-color);
+  border-radius: 5px;
 
+  width: 350px;
+}
 
 /* 
 
 */
+
+
+/*
+Global
+*/
+

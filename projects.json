@@ -1,0 +1,14 @@
+{
+    "rainlang": {
+        "header": "Rain programming language",
+        "url": "https://github.com/nikeedev/rain-lang",
+        "img": "../assets/Rain-Lang.png",
+        "desc": "My own programming language, Rain!"
+    },
+    "opengl": {
+        "header": "OpenGL",
+        "url": "https://github.com/nikeedev/opengl",
+        "img": "../assets/opengl.png",
+        "desc": "My OpenGL program based on the stuff i learned from Learn OpenGL website."
+    }
+}

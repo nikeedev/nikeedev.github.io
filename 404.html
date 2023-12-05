@@ -2,63 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/nikee.png" type="image/png">
+    <title>Nikita Goncarenko</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link href="style.css" rel="stylesheet">
+
+    <meta name="description" content="Nikita, developer, musician, and an creative idea-machine">
 
     <meta property="og:title" content="nikeedev" />
     <meta property="og:url" content="https://nikeedev.github.io/" />
-    <meta property="og:image" content="https://nikeedev.github.io/assets/about-nikeedev.png" />
+    <meta property="og:image" content="https://nikeedev.github.io/assets/nikee_256.png" />
     <meta property="og:image:height" content="500" />
 
     <style>
-        html {
-            background-color: var(--back-color);
-            font-family: 'Roboto';
+        .projects-text {
+            left: 0;
+            color: var(--main-color);
+            font-family: "Roboto Mono", monospace;
+            font-size: 14.5px;
+            padding-bottom: 25px;
+            padding-top: 10px;
+            padding-left: 20px;
+            overflow-wrap: break-word;
         }
 
-        .main {
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color: var(--main-color);
-            font-size: 2vw;
+        .projects-text span#yet {
+            padding-top: 20px;
+            padding-left: 50px;
+            font-style: italic;
         }
 
-        .header404 {
-            color: var(--main-color);
-            font-size: 30px;
-        }
-
-        .content404 {
-            text-align: center;
-            padding-left: 7vw;
-            color: var(--main-color);
+        p#name {
+            font-style: italic;
         }
     </style>
 </head>
 
 <body>
-    <div class="main">
-        <h4 class="header404"><i>404</i></h4>
-        <div class="content-404" style>
-            <b>Sorry! This link doesn't exist or the page isn't published out yet.</b>
-        </div>
-        <p>
-            If this website has an GitHub repository you can try opening it: <a id="github-link" href=""></a>
-            <br>
-            <a style="text-align: center;" href="/">Check out my home page instead!</a>
-        </p>
+    <div class="top">
+        <p id="name">404</p>
     </div>
+    <div class="bottom">
+        <div class="menubar">
+            <a href="../">Back home</a>
+            <a target="_blank" href="https://github.com/nikeedev">GitHub</a>
+        </div>
+        <br>
+        <div class="projects-text">
+            <p><b>Sorry! This link doesn't exist or the page isn't published out yet.</b></p>
+            <br>
+            <span id="yet">If this website has an GitHub repository you can try opening it on <a id="github-link"
+                    href=""></a>
+                <br>
+        </div>
 
-    <script defer>
-        let link = document.getElementById("github-link");
-        link.href = "https://github.com/nikeedev"+ window.location.pathname;
-        link.innerText = "https://github.com/nikeedev" + window.location.pathname;
-    </script>
+        <script defer>
+            let link = document.getElementById("github-link");
+            link.href = "https://github.com/nikeedev" + window.location.pathname;
+            link.innerText = "https://github.com/nikeedev" + window.location.pathname;
+        </script>
+
+        <div id="thanks">
+            <p>Thanks to <a href="https://stio.studio" target="_blank">StioStudio</a> for the website hosting on his
+                domain! <img style="background-color: var(--main-color);border-radius: 2px;"
+                    src="https://asset.stio.studio/logo/stio/transparent/16x16.gif" alt="StioStudios pfp gif"></p>
+        </div>
+    </div>
 </body>
 
 </html>
