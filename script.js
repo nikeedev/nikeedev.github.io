@@ -16,8 +16,6 @@ function project(proj) {
 
     let img = document.createElement('img');
     img.src = proj.img;
-    img.width = 256;
-    img.height = 256;
     img.style.imageRendering = "auto"
     img.alt = proj.desc;
     
