@@ -22,7 +22,8 @@ self.addEventListener("install", (event) => {
             "/projects.json",
             "/script.js",
             "/welcome.txt",
-            "/sw.js"
+            "/sw.js",
+            "/router-dom.js",
         ]),
     );
 });
