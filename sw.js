@@ -9,7 +9,6 @@ self.addEventListener("install", (event) => {
             "/",
             "/index.html",
             "/style.css",
-            "/assets",
             "/assets/github-mark-white.png",
             "/assets/github-mark.png",
             "/assets/nikee_256.png",
@@ -22,7 +21,8 @@ self.addEventListener("install", (event) => {
             "/projects.js",
             "/projects.json",
             "/script.js",
-            "/welcome.txt"
+            "/welcome.txt",
+            "/sw.js"
         ]),
     );
 });
