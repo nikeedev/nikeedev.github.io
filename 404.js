@@ -1,4 +1,4 @@
-import router from "./router-dom.js";
+import router from "../router-dom.js";
 
 console.log("Current slash command: " + router.current_route);
 
