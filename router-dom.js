@@ -13,13 +13,15 @@ router["createRoute"] = (route, redirect) => {
 
 let id;
 
-window.onload = () => {
-    for (const route of router.routes) {
-        if (route.route == router.current_route) {
-            window.location.replace(route.redirect);
-            cancelAnimationFrame(id);
+
+document.addEventListener("DOMContentLoaded", function() {
+    if (document.readyState === "complete") {
+        for (const route of router.routes) {
+            if (route.route == router.current_route) {
+                window.location.replace(route.redirect);
+            }
         }
     }
-}
+});
 
 export default router;
