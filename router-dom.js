@@ -11,16 +11,13 @@ router["createRoute"] = (route, redirect) => {
 
 // console.log(current_route);
 
-function update() {
+let id;
 
-    for (const route of router.routes) {
-        if (route.route == router.current_route) {
-            window.location.replace(route.redirect);
-        }
+for (const route of router.routes) {
+    if (route.route == router.current_route) {
+        window.location.replace(route.redirect);
+        cancelAnimationFrame(id);
     }
-
-    requestAnimationFrame(update);
 }
-requestAnimationFrame(update);
 
 export default router;
