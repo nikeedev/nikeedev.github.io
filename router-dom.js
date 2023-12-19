@@ -13,10 +13,12 @@ router["createRoute"] = (route, redirect) => {
 
 let id;
 
-for (const route of router.routes) {
-    if (route.route == router.current_route) {
-        window.location.replace(route.redirect);
-        cancelAnimationFrame(id);
+window.onload = () => {
+    for (const route of router.routes) {
+        if (route.route == router.current_route) {
+            window.location.replace(route.redirect);
+            cancelAnimationFrame(id);
+        }
     }
 }
 
