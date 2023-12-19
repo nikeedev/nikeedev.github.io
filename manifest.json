@@ -1,0 +1,12 @@
+{
+  "name": "nikeedev",
+  "icons": [
+    {
+      "src": "assets/nikee.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ],
+  "start_url": "https://nikeedev.stio.studio",
+  "display": "minimal-ui"
+}
