@@ -22,3 +22,5 @@ function update() {
     requestAnimationFrame(update);
 }
 requestAnimationFrame(update);
+
+export default router;
