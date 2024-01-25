@@ -13,7 +13,6 @@ router["createRoute"] = (route, redirect) => {
 
 let id;
 
-
 document.addEventListener("DOMContentLoaded", function() {
     if (document.readyState === "complete") {
         for (const route of router.routes) {
