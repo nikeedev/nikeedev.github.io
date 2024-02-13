@@ -3,23 +3,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    /* --main-color: rgb(98, 113, 247); */
-    --main-color: #fbf1c7;
-    /* --back-color: rgb(236, 233, 233); */
-    --back-color: #665c54;
+    --main-color: rgb(98, 113, 247);
+    --back-color: #282828;
+    --bottom-color: var(--back-color);
+    --top-color: var(--main-color);
+    --text-color: var(--main-color);
+    --name: var(--back-color);
+    --link-color: var(--main-color);
+    --link-menubar: var(--back-color);
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    /* --main-color: rgb(98, 113, 247); */
-    --main-color: #ebdbb2;
-    /* --back-color: rgb(236, 233, 233); */
+    --main-color: rgb(98, 113, 247);
     --back-color: #282828;
+    --bottom-color: var(--main-color);
+    --top-color: var(--back-color);
+    --text-color: var(--back-color);
+    --name: var(--main-color);
+    --link-color: var(--back-color);
+    --link-menubar: var(--main-color);
   }
 }
+
 
 html {
   font-family: "Helvetica";
@@ -29,8 +38,12 @@ body {
   margin: 0;
 }
 
+a:any-link {
+  color: var(--link-color);
+}
+
 .top {
-  background-color: var(--main-color);
+  background-color: var(--top-color);
   /* width: 100vw; */
   height: 30vh;
 }
@@ -42,20 +55,20 @@ body {
   margin-bottom: 2px;
   padding-left: 5vw;
   padding-top: 12.9vh;
-  color: var(--back-color);
+  color: var(--name);
 }
 
 .bottom {
-  height: 90vh;
-  background-color: var(--back-color);
+  height: 100lvh;
+  background-color: var(--bottom-color);
 }
 
 .roles {
   float: left;
-  width: 85vh;
+  /* width: 85vh; */
   font-size: 14px;
   font-family: "Roboto Mono", monospace;
-  color: var(--main-color);
+  color: var(--text-color);
 }
 
 .roles li {
@@ -69,7 +82,7 @@ body {
 
 .desc {
   float: right;
-  color: var(--main-color);
+  color: var(--text-color);
   font-family: "Roboto Mono", monospace;
   font-size: 14.5px;
   padding-bottom: 25px;
@@ -80,19 +93,38 @@ body {
 }
 
 .menubar {
-  color: var(--main-color);
+  color: var(--back-color);
+  background-color: var(--top-color);
   position: absolute;
   font-size: 14px;
-  padding-left: 40vw;
+  margin-left: 40vw;
   font-family: "Roboto Mono", monospace;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.menubar a + a {
-  padding: 50px;
+.menubar a {
+  color: var(--link-menubar);
+  background-color: var(--top-color);
 }
 
-a:any-link {
-  color: var(--main-color);
+.menubar a+a {
+  margin-left: 50px;
+}
+
+
+.contact {
+  float: left;
+  color: var(--text-color);
+  font-family: "Roboto Mono", monospace;
+  font-size: 14.5px;
+  position: relative;
+  padding-left: 20px;
+  bottom: 20px;
+  overflow-wrap: break-word;
 }
 
 /* a:visited {
@@ -101,22 +133,33 @@ a:any-link {
 
 #thanks {
   position: absolute;
-  bottom: -20vh;
+  bottom: -30vh;
   right: 2vw;
   font-size: 14px;
   font-family: "Roboto Mono", monospace;
-  color: var(--main-color);
+  color: var(--text-color);
 }
 
 #thanks img {
   bottom: 40px;
+  background-color: var(--link-color);
+  border-radius: 10px;
+  padding: 2px;
 }
 
+
+/* ******************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+********************************************************
+****************************************************** */
 
 /*
   for projects.html
 */
-
 
 .projects {
   padding-top: 50px;
@@ -134,7 +177,8 @@ a:any-link {
 }
 
 #project {
-  background-color: var(--main-color);
+  background-color: var(--text-color);
+  color: var(--bottom-color);
   border-radius: 5px;
 
   width: 350px;
@@ -152,12 +196,8 @@ a:any-link {
 .projects p {
   margin-left: 20px;
 }
+
 /* 
 
-*/
-
-
-/*
-Global
 */
 
