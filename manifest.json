@@ -20,5 +20,6 @@
   ],
   "start_url": "https://nikeedev.stio.studio",
   "display": "minimal-ui",
+  "theme_color": "#6271f7",
   "background_color": "#282828"
 }
