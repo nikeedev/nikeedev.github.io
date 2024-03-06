@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://nikeedev.github.io/" />
     <meta property="og:image" content="https://nikeedev.github.io/assets/nikee_256.png" />
     <meta property="og:image:height" content="500" />
-
+    <link rel="manifest" href="manifest.json" />
     <style>
         .projects-text {
             left: 0;
@@ -60,9 +60,9 @@
         </div>
 
         <script defer>
-            let link = document.getElementById("github-link");
-            link.href = "https://github.com/nikeedev" + window.location.pathname;
-            link.innerText = "https://github.com/nikeedev" + window.location.pathname;
+            window.addEventListener("DOMContentLoaded",()=>{    let link = document.getElementById("github-link");
+                link.href = "https://github.com/nikeedev" + window.location.pathname;
+                link.innerText = "https://github.com/nikeedev" + window.location.pathname;});
         </script>
 
         <div id="thanks">

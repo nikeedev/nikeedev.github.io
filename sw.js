@@ -6,6 +6,7 @@ const addResourcesToCache = async (resources) => {
 self.addEventListener("install", (event) => {
     event.waitUntil(
         addResourcesToCache([
+            "/sw.js",
             "/",
             "/index.html",
             "/style.css",
@@ -22,8 +23,6 @@ self.addEventListener("install", (event) => {
             "/projects.json",
             "/script.js",
             "/welcome.txt",
-            "/sw.js",
-            "/router-dom.js",
         ]),
     );
 });
