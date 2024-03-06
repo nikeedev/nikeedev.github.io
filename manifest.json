@@ -5,8 +5,19 @@
       "src": "assets/nikee.png",
       "type": "image/png",
       "sizes": "64x64"
+    },
+    {
+      "src": "assets/nikee_256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "assets/nikee_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "https://nikeedev.stio.studio",
-  "display": "minimal-ui"
+  "display": "minimal-ui",
+  "background_color": "#282828"
 }
