@@ -148,6 +148,49 @@ a:any-link {
 }
 
 
+@media screen and (max-width: 850px) {
+  #name {
+    font-size: 30px;
+  }
+  
+  .roles {
+    font-size: 10px;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+
+  #thanks {
+    font-size: 10px;
+    /* bottom: 0vh; */
+  }
+}
+
+@media screen and (max-height: 692px)  {
+  #name {
+    font-size: 30px;
+  }
+  
+  .roles {
+    font-size: 10px;
+  }
+
+  .desc {
+    font-size: 10px;
+  }
+
+  #thanks {
+    font-size: 10px;
+  }
+
+  
+  .contact {
+    font-size: 10px;
+  }
+}
+
+
 /* ******************************************************
 ********************************************************
 ********************************************************
