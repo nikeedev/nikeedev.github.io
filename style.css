@@ -148,7 +148,7 @@ a:any-link {
 }
 
 
-@media handheld and (max-width: 850px) {
+@media (any-pointer: coarse) and (max-width: 850px) {
   #name {
     font-size: 30px;
   }
@@ -167,7 +167,7 @@ a:any-link {
   }
 }
 
-@media handheld and (max-height: 692px)  {
+@media (any-pointer: coarse) and (max-height: 692px)  {
   #name {
     font-size: 30px;
   }
