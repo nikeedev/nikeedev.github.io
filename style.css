@@ -131,21 +131,6 @@ a:any-link {
   color: #fabd2f;
 } */
 
-#thanks {
-  position: absolute;
-  bottom: -30vh;
-  right: 2vw;
-  font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: var(--text-color);
-}
-
-#thanks img {
-  bottom: 40px;
-  background-color: var(--link-color);
-  border-radius: 10px;
-  padding: 2px;
-}
 
 
 @media (any-pointer: coarse) and (max-width: 850px) {
@@ -159,11 +144,6 @@ a:any-link {
 
   .desc {
     font-size: 12px;
-  }
-
-  #thanks {
-    font-size: 10px;
-    /* bottom: 0vh; */
   }
 }
 
@@ -179,11 +159,6 @@ a:any-link {
   .desc {
     font-size: 10px;
   }
-
-  #thanks {
-    font-size: 10px;
-  }
-
   
   .contact {
     font-size: 10px;
