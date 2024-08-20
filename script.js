@@ -30,12 +30,6 @@ let mainColor = "";
 let backColor = "";
 let textColor = "";
 
-document.documentElement.style.setProperty("--text-color", "var(--main-color)");
-document.documentElement.style.setProperty("--link-menubar", "var(--back-color)");
-document.documentElement.style.setProperty("--link-color", "var(--main-color)");
-document.documentElement.style.setProperty("--name", "var(--back-color)");
-document.documentElement.style.setProperty("--top-color", "var(--main-color)");
-
 if (theme == "Original") {
     mainColor = "#6271f7";
     backColor = "#282828";
