@@ -63,10 +63,7 @@
         let btn = document.getElementById("btn");
         btn.onclick = () => {
             localStorage.setItem("theme", select.value);
-            if (location.href == "https://nikee.dev/theme.html")
-                history.back();
-            else 
-                location.href = "https://nikee.dev";
+            location.href = "https://nikee.dev";
         }
     </script>
 </body>
