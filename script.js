@@ -52,7 +52,7 @@ if (theme == "Original") {
 
     document.documentElement.style.setProperty("--text-color", mainColor);
     document.documentElement.style.setProperty("--link-menubar", mainColor);
-    document.documentElement.style.setProperty("--link-color", mainColor);
+    document.documentElement.style.setProperty("--link-color", "#ffffff");
     document.documentElement.style.setProperty("--name", "#ffffff");
     
     document.querySelectorAll(".menubar a").forEach(el => el.style.backgroundColor = backColor);
