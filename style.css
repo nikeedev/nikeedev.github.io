@@ -97,8 +97,8 @@ a:any-link {
     color: var(--back-color);
     position: absolute;
     font-size: 14px;
-    margin-left: 40vw;
-    font-family: "Roboto Mono", monospace;
+    margin-left: 33.5vw;
+    font-family: "Roboto Mono", monospace !important;
     padding: 6px;
     margin-top: 20px;
 }

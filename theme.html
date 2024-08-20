@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/nikee.png" type="image/png">
+    <title>nikeedev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+
+    <meta name="description" content="Nikita, developer, musician, and an creative idea-machine">
+
+    <meta property="og:title" content="nikeedev" />
+    <meta property="og:url" content="https://nikee.dev/" />
+    <meta property="og:image" content="https://nikee.dev/assets/nikee_256.png" />
+    <meta property="og:image:height" content="500" />
+    
+    <link rel="manifest" href="manifest.json" />
+    <meta name="Theme" content="I like gruvbox :D">
+
+    <style>
+        .menubar * {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        option {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <p id="name">Theme</p>
+    </div>
+    <div class="bottom">
+        <div class="menubar">
+            <select name="theme" id="theme">
+                <option value="Original">Original</option>
+                <option value="blueorange">Blue-Orange</option>
+                <option value="pistachio">Pistachio</option>
+            </select>
+            <br>
+            <button id="btn">Apply</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        /**
+         * @type {HTMLSelectElement} theme
+         */
+        let select = document.getElementById("theme");
+ 
+        select.value = localStorage.getItem("theme");
+
+        let btn = document.getElementById("btn");
+        btn.onclick = () => {
+            localStorage.setItem("theme", select.value);
+            if (location.href == "https://nikee.dev/theme.html")
+                history.back();
+            else 
+                location.href = "https://nikee.dev";
+        }
+    </script>
+</body>
+</html>
