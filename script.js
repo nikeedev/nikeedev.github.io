@@ -33,8 +33,8 @@ if (theme == "Original") {
     mainColor = "#6271f7";
     backColor = "#282828";
 } else if (theme == "blueorange") {
-    mainColor = "#1d2ec4";
-    backColor = "#ffbb46";
+    mainColor = "#ffbb46";
+    backColor = "#1d2ec4";
 } else if (theme == "pistachio") {  
     mainColor = "#8affab";  
     backColor = "#282828";
