@@ -3,128 +3,133 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --main-color: #6271f7;
-    --back-color: #282828;
-    --bottom-color: var(--back-color);
-    --top-color: var(--main-color);
-    --text-color: var(--main-color);
-    --name: var(--back-color);
-    --link-color: var(--main-color);
-    --link-menubar: var(--back-color);
-  }
-}
-
+/* @media (prefers-color-scheme: dark) { */
+    :root {
+        --main-color: #6271f7;
+        --back-color: #282828;
+        --bottom-color: var(--back-color);
+        --top-color: var(--main-color);
+        --text-color: var(--main-color);
+        --name: var(--back-color);
+        --link-color: var(--main-color);
+        --link-menubar: var(--back-color);
+    }
+/* } */
+/* 
 @media (prefers-color-scheme: light) {
-  :root {
-    --main-color: rgb(98, 113, 247);
-    --back-color: #282828;
-    --bottom-color: var(--main-color);
-    --top-color: var(--back-color);
-    --text-color: var(--back-color);
-    --name: var(--main-color);
-    --link-color: var(--back-color);
-    --link-menubar: var(--main-color);
-  }
-}
+    :root {
+        --main-color: rgb(98, 113, 247);
+        --back-color: #282828;
+        --bottom-color: var(--main-color);
+        --top-color: var(--back-color);
+        --text-color: var(--back-color);
+        --name: var(--main-color);
+        --link-color: var(--back-color);
+        --link-menubar: var(--main-color);
+    }
+} */
 
 
 html {
-  font-family: "Helvetica";
+    font-family: "Helvetica";
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 a:any-link {
-  color: var(--link-color);
+    color: var(--link-color);
 }
 
 .top {
-  background-color: var(--top-color);
-  /* width: 100vw; */
-  height: 30vh;
+    background-color: var(--top-color);
+    /* width: 100vw; */
+    height: 30vh;
 }
 
 #name {
-  font-family: "Josefin Sans", monospace;
-  font-size: 36px;
-  margin-top: 0px;
-  margin-bottom: 2px;
-  padding-left: 5vw;
-  padding-top: 12.9vh;
-  color: var(--name);
+    font-family: "Josefin Sans", monospace;
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    padding-left: 5vw;
+    padding-top: 12.9vh;
+    color: var(--name);
 }
 
 .bottom {
-  height: 100lvh;
-  background-color: var(--bottom-color);
+    height: 100lvh;
+    background-color: var(--bottom-color);
 }
 
 .roles {
-  float: left;
-  /* width: 85vh; */
-  font-size: 14px;
-  font-family: "Roboto Mono", monospace;
-  color: var(--text-color);
+    float: left;
+    /* width: 85vh; */
+    font-size: 14px;
+    font-family: "Roboto Mono", monospace;
+    color: var(--text-color);
+    font-style: italic;
 }
 
 .roles li {
-  width: 200px;
-  font-style: italic;
+    width: 200px;
+    font-style: italic;
 }
 
 .roles ul {
-  list-style-type: "- ";
+    list-style-type: "~ ";
 }
 
 .desc {
-  float: right;
-  color: var(--text-color);
-  font-family: "Roboto Mono", monospace;
-  font-size: 14.5px;
-  padding-bottom: 25px;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  overflow-wrap: break-word;
+    float: right;
+    color: var(--text-color);
+    font-family: "Roboto Mono", monospace;
+    font-size: 14.5px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-wrap: break-word;
 }
 
 .menubar {
-  color: var(--back-color);
-  background-color: var(--top-color);
-  position: absolute;
-  font-size: 14px;
-  margin-left: 40vw;
-  font-family: "Roboto Mono", monospace;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-bottom: 4px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+    color: var(--back-color);
+    position: absolute;
+    font-size: 14px;
+    margin-left: 40vw;
+    font-family: "Roboto Mono", monospace;
+    padding: 6px;
+    margin-top: 20px;
 }
 
 .menubar a {
-  color: var(--link-menubar);
-  background-color: var(--top-color);
+    color: var(--link-menubar);
+    background-color: var(--top-color);
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid #484848;
+}
+    
+.menubar span#menubarbox {
+    background-color: var(--link-color);
+    margin-bottom: 24px;
 }
 
-.menubar a+a {
-  margin-left: 50px;
+.menubar span + span {
+    margin-left: 50px;
 }
 
 
 .contact {
-  float: left;
-  color: var(--text-color);
-  font-family: "Roboto Mono", monospace;
-  font-size: 14.5px;
-  position: relative;
-  padding-left: 20px;
-  bottom: 20px;
-  overflow-wrap: break-word;
+    float: left;
+    color: var(--text-color);
+    font-family: "Roboto Mono", monospace;
+    font-size: 14.5px;
+    position: relative;
+    padding-left: 20px;
+    bottom: 20px;
+    overflow-wrap: break-word;
 }
 
 /* a:visited {
@@ -134,34 +139,33 @@ a:any-link {
 
 
 @media (any-pointer: coarse) and (max-width: 850px) {
-  #name {
-    font-size: 30px;
-  }
-  
-  .roles {
-    font-size: 10px;
-  }
+    #name {
+        font-size: 30px;
+    }
 
-  .desc {
-    font-size: 12px;
-  }
+    .roles {
+        font-size: 10px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
 }
 
-@media (any-pointer: coarse) and (max-height: 692px)  {
-  #name {
-    font-size: 30px;
-  }
-  
-  .roles {
-    font-size: 10px;
-  }
+@media (any-pointer: coarse) and (max-height: 692px) {
+    #name {
+        font-size: 30px;
+    }
 
-  .desc {
-    font-size: 10px;
-  }
-  
-  .contact {
-    font-size: 10px;
-  }
+    .roles {
+        font-size: 10px;
+    }
+
+    .desc {
+        font-size: 10px;
+    }
+
+    .contact {
+        font-size: 10px;
+    }
 }
-
