@@ -46,15 +46,14 @@ if (theme == "Original") {
     mainColor = "#8affab";  
     backColor = "#282828";
 } else if (theme == "darksunset") {
-    mainColor = "#ff5c1f80";
-    backColor = "#ff5c1f";
-    textColor = "#ffffff";
+    mainColor = "#FF4500";
+    backColor = "#1a1a1a";
 
 
-    document.documentElement.style.setProperty("--text-color", textColor);
-    document.documentElement.style.setProperty("--link-menubar", textColor);
-    document.documentElement.style.setProperty("--link-color", textColor);
-    document.documentElement.style.setProperty("--name", textColor);
+    document.documentElement.style.setProperty("--text-color", mainColor);
+    document.documentElement.style.setProperty("--link-menubar", mainColor);
+    document.documentElement.style.setProperty("--link-color", mainColor);
+    document.documentElement.style.setProperty("--name", "#ffffff");
     
     document.querySelectorAll(".menubar a").forEach(el => el.style.backgroundColor = backColor);
 }
