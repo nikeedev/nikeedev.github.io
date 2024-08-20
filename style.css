@@ -105,7 +105,7 @@ a:any-link {
 
 .menubar a {
     color: var(--link-menubar);
-    background-color: var(--top-color);
+    background-color: var(--main-color);
     padding: 7px;
     border-radius: 5px;
     border: 2px solid #484848;

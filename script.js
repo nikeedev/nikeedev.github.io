@@ -28,6 +28,13 @@ if (theme == null) {
 
 let mainColor = "";
 let backColor = "";
+let textColor = "";
+
+document.documentElement.style.setProperty("--text-color", "var(--main-color)");
+document.documentElement.style.setProperty("--link-menubar", "var(--back-color)");
+document.documentElement.style.setProperty("--link-color", "var(--main-color)");
+document.documentElement.style.setProperty("--name", "var(--back-color)");
+document.documentElement.style.setProperty("--top-color", "var(--main-color)");
 
 if (theme == "Original") {
     mainColor = "#6271f7";
@@ -38,6 +45,18 @@ if (theme == "Original") {
 } else if (theme == "pistachio") {  
     mainColor = "#8affab";  
     backColor = "#282828";
+} else if (theme == "darksunset") {
+    mainColor = "#ff5c1f80";
+    backColor = "#ff5c1f";
+    textColor = "#ffffff";
+
+
+    document.documentElement.style.setProperty("--text-color", textColor);
+    document.documentElement.style.setProperty("--link-menubar", textColor);
+    document.documentElement.style.setProperty("--link-color", textColor);
+    document.documentElement.style.setProperty("--name", textColor);
+    
+    document.querySelectorAll(".menubar a").forEach(el => el.style.backgroundColor = backColor);
 }
 
 document.documentElement.style.setProperty("--main-color", mainColor);
