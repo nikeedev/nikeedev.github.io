@@ -93,7 +93,7 @@ a:any-link {
     overflow-wrap: break-word;
 }
 
-.menubar {
+.menubar, .menubar select option {
     color: var(--back-color);
     position: absolute;
     font-size: 14px;
@@ -103,7 +103,7 @@ a:any-link {
     margin-top: 20px;
 }
 
-.menubar a {
+.menubar a, .menubar select option {
     color: var(--link-menubar);
     background-color: var(--main-color);
     padding: 7px;
@@ -111,7 +111,7 @@ a:any-link {
     border: 2px solid #484848;
 }
     
-.menubar span#menubarbox {
+.menubar span#menubarbox, .menubar select option  {
     background-color: var(--link-color);
     margin-bottom: 24px;
 }
