@@ -4,16 +4,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 /* @media (prefers-color-scheme: dark) { */
-    :root {
-        --main-color: #6271f7;
-        --back-color: #282828;
-        --bottom-color: var(--back-color);
-        --top-color: var(--main-color);
-        --text-color: var(--main-color);
-        --name: var(--back-color);
-        --link-color: var(--main-color);
-        --link-menubar: var(--back-color);
-    }
+:root {
+    --main-color: #6271f7;
+    --back-color: #282828;
+    --bottom-color: var(--back-color);
+    --top-color: var(--main-color);
+    --text-color: var(--main-color);
+    --name: var(--back-color);
+    --link-color: var(--main-color);
+    --link-menubar: var(--back-color);
+}
 /* } */
 /* 
 @media (prefers-color-scheme: light) {
@@ -32,6 +32,9 @@
 
 html {
     font-family: "Helvetica";
+
+    overflow: scroll;
+    scrollbar-color: var(--main-color) var(--back-color);
 }
 
 body {
