@@ -53,7 +53,7 @@ a:any-link {
 }
 
 #name {
-    font-family: Consolas;
+    font-family: Consolas, "Roboto Mono", monospace;
     font-style: italic;
     font-weight: bold;
     font-size: 36px;
