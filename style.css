@@ -175,3 +175,8 @@ a:any-link {
         font-size: 10px;
     }
 }
+
+#wcb_p {
+    position: relative;
+    margin-left: 75vw;
+}
