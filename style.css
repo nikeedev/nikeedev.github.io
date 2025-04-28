@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
+@font-face {
+  font-family: nikee;
+  src: url(assets/Consolas-Bold-Italic.woff);
+}
+
 /* @media (prefers-color-scheme: dark) { */
 :root {
     --main-color: #6271f7;
@@ -53,9 +58,11 @@ a:any-link {
 }
 
 #name {
-    font-family: Consolas, "Roboto Mono", monospace;
+    font-family: nikee, monospace;
+    /*
     font-style: italic;
     font-weight: bold;
+    */
     font-size: 36px;
     margin-top: 0px;
     margin-bottom: 2px;
