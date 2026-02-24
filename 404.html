@@ -48,30 +48,27 @@
     </style>
 </head>
 <body>
-    <!-- <script defer src="router-dom.js" type="module"></script> -->
-    <script src="../404.js" type="module"></script>
     <div class="top">
         <p id="name">404</p>
     </div>
     <div class="bottom">
         <div class="menubar">
             <a href="../">Back home</a>
-            <a target="_blank" href="https://codeberg.org/nikee">Codeberg</a>
+            <a target="_blank" href="https://github.com/nikeedev">GitHub</a>
         </div>
         <br>
         <div class="projects-text">
             <p><b>Sorry! This link doesn't exist or the page isn't published out yet.</b></p>
             <br>
-            <span id="yet">If this website has an GitHub repository you can try opening it on <a id="git-link"
-                    href=""></a>
-                <br>
+            <span id="yet">If this website has an GitHub repository you can try opening it on <a id="git-link" href=""></a>
+            <br>
         </div>
         
         <script defer type="module" src="https://stats.nikee.dev/script"></script>
         <script defer>
             window.addEventListener("DOMContentLoaded",()=>{    let link = document.getElementById("git-link");
-                link.href = "https://codeberg.org/nikee" + window.location.pathname;
-                link.innerText = "https://codeberg.org/nikee" + window.location.pathname;});
+                link.href = "https://github.com/nikeedev" + window.location.pathname;
+                link.innerText = "https://github.com/nikeedev" + window.location.pathname;});
         </script>
     </div>
 </body>
