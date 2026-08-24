@@ -7,7 +7,7 @@
     <title>404 - nikee.dev</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
 
     <meta name="description" content="Nikita, developer, musician, and a creative idea-machine">
 
@@ -48,8 +48,6 @@
     </style>
 </head>
 <body>
-    <!-- <script defer src="router-dom.js" type="module"></script> -->
-    <script src="../404.js" type="module"></script>
     <div class="top">
         <p id="name">404</p>
     </div>
@@ -62,14 +60,13 @@
         <div class="projects-text">
             <p><b>Sorry! This link doesn't exist or the page isn't published out yet.</b></p>
             <br>
-            <span id="yet">If this website has an GitHub repository you can try opening it on <a id="github-link"
-                    href=""></a>
-                <br>
+            <span id="yet">If this website has an GitHub repository you can try opening it on <a id="git-link" href=""></a>
+            <br>
         </div>
         
         <script defer type="module" src="https://stats.nikee.dev/script"></script>
         <script defer>
-            window.addEventListener("DOMContentLoaded",()=>{    let link = document.getElementById("github-link");
+            window.addEventListener("DOMContentLoaded",()=>{    let link = document.getElementById("git-link");
                 link.href = "https://github.com/nikeedev" + window.location.pathname;
                 link.innerText = "https://github.com/nikeedev" + window.location.pathname;});
         </script>
