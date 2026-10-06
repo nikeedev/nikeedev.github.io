@@ -10,8 +10,8 @@
 
 /* @media (prefers-color-scheme: dark) { */
 :root {
-    --main-color: #6271f7;
-    --back-color: #282828;
+    --main-color: #F5F8AB;
+    --back-color: #205A97;
     --bottom-color: var(--back-color);
     --top-color: var(--main-color);
     --text-color: var(--main-color);
@@ -53,8 +53,9 @@ a:any-link {
 
 .top {
     background-color: var(--top-color);
-    /* width: 100vw; */
-    height: 30vh;
+    /*! width: 100vw; */
+    height: 10vh;
+    margin-top: 5vh;
 }
 
 #name {
@@ -66,8 +67,8 @@ a:any-link {
     font-size: 36px;
     margin-top: 0px;
     margin-bottom: 2px;
-    padding-left: 5vw;
-    padding-top: 12.9vh;
+    padding-left: 4vw;
+    padding-top: 1.65vh;
     color: var(--name);
 }
 
@@ -83,6 +84,7 @@ a:any-link {
     font-family: "Roboto Mono", monospace;
     color: var(--text-color);
     font-style: italic;
+    margin-left: 2vw;
 }
 
 .roles li {
@@ -91,7 +93,7 @@ a:any-link {
 }
 
 .roles ul {
-    list-style-type: "~ ";
+    list-style-type: "# ";
 }
 
 .desc {
@@ -110,10 +112,10 @@ a:any-link {
     color: var(--back-color);
     position: absolute;
     font-size: 14px;
-    margin-left: 43vw;
+    margin-left: 70vw;
     font-family: "Roboto Mono", monospace !important;
     padding: 6px;
-    margin-top: 20px;
+    margin-top: -46.5px;
 }
 
 .menubar a, .menubar select option {
@@ -121,7 +123,7 @@ a:any-link {
     background-color: var(--main-color);
     padding: 7px;
     border-radius: 5px;
-    border: 2px solid #484848;
+    border: 2px solid #58a6aa;
 }
     
 .menubar span#menubarbox, .menubar select option {
@@ -182,3 +184,4 @@ a:any-link {
         font-size: 10px;
     }
 }
+
